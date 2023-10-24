@@ -159,3 +159,10 @@
     font-display: swap;
     src: url('PSDemo.ttf');
 }
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('DancingScript-Bold.ttf');
+}

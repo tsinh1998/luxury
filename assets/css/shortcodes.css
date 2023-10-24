@@ -36,7 +36,7 @@
 }
 
 .wg-blog .image {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -44,13 +44,14 @@
     display: flex;
     gap: 23px;
     align-items: center;
-    margin-bottom: 17px;
+    margin-bottom: 11px;
 }
 
 .meta .meta-item {
     position: relative;
     padding-left: 12px;
     font-size: 13px;
+    line-height: 25px;
     font-family: 'CerebriSans';
     letter-spacing: 0.4px;
 }
@@ -58,11 +59,12 @@
 .meta .meta-item::before {
     position: absolute;
     content: '';
-    top: 4px;
+    top: 50%;
     left: 1px;
     width: 4px;
     height: 4px;
     border-radius: 50%;
+    transform: translateY(-50%);
     background-color: #c6ac83;
 }
 
@@ -626,6 +628,11 @@ form.form-search button {
     height: 23px;
 }
 
+.wg-blockquote.t1.link .icon img {
+    width: 50px;
+    height: 19px;
+}
+
 /* wg-action */
 /* ---------------------------------- */
 .wg-action {
@@ -773,6 +780,7 @@ form.form-search button {
     height: 68px;
     border-radius: 50%;
     overflow: hidden;
+    border: 1px solid #c6ac83;
 }
 
 .wg-comment .author .name {
@@ -821,7 +829,9 @@ form.form-search button {
     margin-bottom: 50px;
 }
 
-
 .post-comment form .bot {
     padding-left: 27px;
 }
+
+/* page-title */
+/* -------------------------------- */
