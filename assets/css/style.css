@@ -27,7 +27,7 @@
 	* header
     * footer
     * banner-page
-    * header section
+    * heading-section
     * preload
     * go top
     * cusor
@@ -565,8 +565,8 @@ select{
 .select::after {
     position: absolute;
     content: '\e91d';
-    right: 10px;
-    top: 46%;
+    right: 15px;
+    top: 35%;
     width: 20px;
     height: 20px;
     font-family: 'icomoon';
@@ -574,6 +574,7 @@ select{
     font-weight: 700;
     display: block;
     color: #fff;
+    background-color: #0e1618;
     pointer-events: none;
     -webkit-transition: .25s all ease;
     -o-transition: .25s all ease;
@@ -597,7 +598,8 @@ select {
     font-size: 15px;
     font-weight: 400;
     line-height: 50px;
-    background-color: #48433f;
+    background-color: transparent;
+    border: 1px solid #c6ac83;
     color: #fff;
     margin-bottom: 15px;
     position: relative;
@@ -775,6 +777,10 @@ input[type="submit"] {
     position          : relative;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #FFF;
+}
+
 /* Button hover + focus */
 button:hover,
 input[type="button"]:hover,
@@ -918,11 +924,6 @@ h6 {
 }
 .mt-30 {
     margin-top: 30px !important;
-}
-.divider {
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 .capitalize {
     text-transform: capitalize;
@@ -2026,19 +2027,17 @@ a:focus {
 /* heading-section */
 /* --------------------------- */
 .heading-section .sub {
-    color: #888888;
-    font-family: 'CerebriSans';
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+    color: #c6ac83;
+    font-family: 'CormorantInfant';
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+    font-style: italic;
     margin-bottom: 10px;
-    position: relative;
 }
 
 .heading-section .main {
-    color: #111111;
+    color: #fff;
     font-size: 45px;
     font-weight: 700;
     line-height: 55px;
@@ -2047,9 +2046,54 @@ a:focus {
     margin-top: 11px;
 }
 
-.heading-section.style-1 .main {
-    color: #FFF;
+.divider {
+    width: 156px;
+    height: 1px;
+    background-color: #c6ac83;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
+
+.divider div {
+    position: absolute;
+    border: 1px solid #c6ac83;
+    width: 26px;
+    height: 26px;
+    transform: translate(-50%,-50%) rotate(45deg);
+    background-color: #0e1618;
+}
+
+.divider div::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #c6ac83;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.description {
+    color: #c6ac83;
+    font-family: 'CormorantInfant';
+    font-size: 23px;
+    line-height: 33px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+ul.list-content li p {
+    margin-bottom: 10px;
+}
+
+ul.list-content li p.text {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
 
 /* preload */
 /* -------------------------------- */

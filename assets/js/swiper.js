@@ -26,3 +26,16 @@ var sliderinit = function() {
     }
 }
 sliderinit();
+
+
+var swiper = new Swiper(".slider-page-title", {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    pagination: {
+        el: ".page-title-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+    },
+});
