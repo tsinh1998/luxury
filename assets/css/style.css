@@ -2094,6 +2094,15 @@ ul.list-content li p.text {
     margin-bottom: 25px;
 }
 
+.heading-section.text-center .divider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 284px;
+}
+
+.heading-section.text-center .divider div {
+    left: 50%;
+}
 
 /* preload */
 /* -------------------------------- */
