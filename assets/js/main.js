@@ -331,6 +331,24 @@
     }
   };
 
+  var buttonHeart = function () { 
+    $(".button-wishlist").on("click", function() {
+        var iteration = $(this).data('iteration') || 1;
+        
+        switch (iteration) {
+            case 1:
+                $(this).addClass("active");
+                break;
+            case 2:
+                $(this).removeClass("active");
+                break;
+        }
+        iteration++;
+        if (iteration > 2) iteration = 1;
+        $(this).data('iteration', iteration);
+    });
+}
+
   var retinaLogos = function() {
     var retina = window.devicePixelRatio > 1 ? true : false;
       if(retina) {
@@ -368,6 +386,7 @@
     btnQuantity();
     gotop();
     cursor();
+    buttonHeart();
     retinaLogos();
     preloader();
   });
