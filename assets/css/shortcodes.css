@@ -836,11 +836,11 @@ form.form-search button {
 /* page-title */
 /* -------------------------------- */
 .page-title .content {
-    padding-top: 190px;
+    padding-top: 194px;
     padding-bottom: 230px;
     background-attachment: fixed;
     background-position: center;
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -853,8 +853,7 @@ form.form-search button {
     left: 0px;
     width: 100%;
     height: 100%;
-  }
-  
+}
 
 .page-title .content .text {
     font-weight: 600;
@@ -862,6 +861,7 @@ form.form-search button {
     font-style: italic;
     line-height: 32px;
     color: #b09a72;
+    letter-spacing: 0.6px;
 }
 
 .page-title .content .heading {
@@ -869,10 +869,18 @@ form.form-search button {
     font-size: 75px;
     line-height: 100px;
     letter-spacing: 3px;
+    letter-spacing: 7.5px;
+    padding-left: 9px;
+    margin-top: 17px;
+    margin-bottom: 5px;
 }
 
 .page-title .content p {
     margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    margin-bottom: 41px;
 }
 
 .page-title .content.text-center {
@@ -882,6 +890,8 @@ form.form-search button {
 
 .page-title .content.text-center a {
     margin: auto;
+    letter-spacing: 1.9px;
+    transform: translateX(-4px);
 }
 
 .page-title .content.text-right {
@@ -902,8 +912,13 @@ form.form-search button {
     margin-left: 0;
 }
 
+.page-title .swiper-pagination {
+    bottom: 55px !important;
+    left: 8px !important;
+}
+
 .swiper-pagination.style-number .swiper-pagination-bullet {
-    font-size: 15px;
+    font-size: 16px;
     color: #FFF;
     width: 27px;
     height: 27px;
@@ -929,7 +944,66 @@ form.form-search button {
     border-radius: 50%;
 }
 
-/* box-icon */
+/* wg-about-us */
+/* --------------------------------- */
+.wg-about-us {
+    padding-top: 135px;
+    padding-bottom: 75px;
+}
+
+.wg-about-us .content {
+    padding-top: 24px;
+}
+
+.wg-about-us .content p {
+    margin-left: 3px;
+    margin-bottom: 43px;
+    max-width: 605px;
+}
+
+/* wg-open-hours */
+.wg-open-hours {
+    padding-bottom: 135px;
+}
+
+.wg-open-hours .image {
+    margin-left: -26px;
+}
+
+.wg-open-hours .content {
+    padding-top: 32px;
+}
+
+.wg-open-hours .content ul {
+    margin-top: 22px;
+}
+
+/* wg-box-icon*/
+/* ------------------------------ */
+.wg-box-icon {
+    padding-top: 88px;
+    padding-bottom: 68px;
+    background-image: url(../images/bg-section/bg-box_icon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wg-box-icon::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 15, 16,0.702);
+}
+
+.box-icon {
+    text-align: center;
+}
+
 .box-icon .icon {
     width: 129px;
     height: 129px;
@@ -938,7 +1012,8 @@ form.form-search button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 35px;
+    margin: auto;
+    margin-bottom: 32px;
     position: relative;
 }
 
@@ -970,7 +1045,8 @@ form.form-search button {
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 .box-icon .title a {
@@ -979,6 +1055,12 @@ form.form-search button {
 
 .box-icon .title a:hover {
     color: #c6ac83;
+}
+
+.box-icon p {
+    margin: auto;
+    max-width: 235px;
+    color: #e0e3e5;
 }
 
 /* wg-video-full */
@@ -1047,8 +1129,40 @@ form.form-search button {
     animation: playvideo 2.5s ease-in-out infinite; 
 }
 
-/* event */
+/* wg-private-event */
 /* -------------------------------- */
+.wg-private-event {
+    padding-top: 125px;
+    padding-bottom: 142px;
+    position: relative;
+    overflow: hidden;
+}
+
+.snare-after::after {
+    position: absolute;
+    content: url(../images/item-background/snare.png);
+    top: 0;
+    right: -9px;
+}
+
+.snare-before::before {
+    position: absolute;
+    content: url(../images/item-background/snare.png);
+    transform: rotate(180deg);
+    top: 0;
+    left: -8px;
+}
+
+.wg-private-event p {
+    font-size: 17px;
+    line-height: 28px;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 36px;
+    max-width: 945px;
+    text-align: center;
+}
+
 .event-grid {
     display: flex;
 }
@@ -1080,12 +1194,15 @@ form.form-search button {
 
 .box-event img {
     width: 100%;
+    object-fit: cover;
+    height: 630px;
 }
 
 .box-event .content {
     position: absolute;
+    width: 100%;
     text-align: center;
-    bottom: -64px;
+    bottom: -57px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -1100,8 +1217,8 @@ form.form-search button {
 
 .box-event .content .icon {
     color: #c6ac83;
-    font-size: 75px;
-    margin-bottom: 10px;
+    font-size: 78px;
+    margin-bottom: 8px;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1122,7 +1239,9 @@ form.form-search button {
     font-size: 30px;
     line-height: 60px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
+    margin-left: -8px;
+    letter-spacing: 1.6px;
 }
 
 .box-event .content .title a {
@@ -1138,12 +1257,12 @@ form.form-search button {
     height: 8px;
     background-color: #c6ac83;
     transform: translateY(-50%) rotate(45deg);
-    top: 50%;
-    right: -20px;
+    top: 49%;
+    right: -23px;
 }
 
 .box-event .content .title a::before {
-    left: -20px;
+    left: -27px;
 }
 
 .box-event .content .title a:hover {
@@ -1165,6 +1284,11 @@ form.form-search button {
 
 /* testimonial-item */
 /* ----------------------------- */
+.wg-testimonial {
+    padding-top: 135px;
+    padding-bottom: 127px;
+}
+
 .testimonial-item {
     text-align: center;
 }
@@ -1179,8 +1303,9 @@ form.form-search button {
     font-size: 30px;
     line-height: 40px;
     font-style: italic;
-    margin-top: 30px;
-    margin-bottom: 25px;
+    letter-spacing: 1.6px;
+    margin-top: 42px;
+    margin-bottom: 26px;
 }
 
 .testimonial-item .title a {
@@ -1193,12 +1318,22 @@ form.form-search button {
 }
 
 .testimonial-item p {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+    letter-spacing: 0.46px;
+    max-width: 1100px;
+    margin: auto;
     margin-bottom: 30px;
 }
 
 .rating {
-    font-size: 20px;
+    font-size: 24px;
     color: #c6ac83;
+}
+
+.rating i {
+    margin: 0 -3px;
 }
 
 .testimonial-item .author {
@@ -1206,7 +1341,8 @@ form.form-search button {
     line-height: 26px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 32px;
+    letter-spacing: 1px;
 }
 
 .testimonial-item .author a {
@@ -1217,13 +1353,79 @@ form.form-search button {
     color: #c6ac83;
 }
 
-/* menu */
+.style-arrow-default {
+    top: 49% !important;
+    right: 140px !important;
+}
+
+.style-arrow-default.swiper-button-prev {
+    left: 140px !important;
+    transform: rotate(180deg);
+}
+
+.style-arrow-default::after {
+    content: '\e907' !important;
+    font-family: 'icomoon' !important;
+    color: #c6ac83 !important;
+}
+
+/* wg-our-menu */
 /* ----------------------------- */
+.wg-our-menu {
+    padding-top: 129px;
+    padding-bottom: 130px;
+    background-image: url(../images/bg-section/bg_our_menu.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wg-our-menu::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.549);
+}
+
+.wg-our-menu .content {
+    padding-top: 69px;
+}
+
+.wg-our-menu .content > img {
+    width: 78px;
+    height: 79px;
+    margin-bottom: 26px;
+}
+
+.wg-our-menu .content .heading-section .sub {
+    margin-bottom: 13px;
+}
+
+.wg-our-menu .content .divider {
+    margin-top: 32px;
+    margin-bottom: 44px;
+}
+
+.wg-our-menu .content p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #e0e3e5;
+    margin-bottom: 41px;
+}
+
+.wg-our-menu .box-menu {
+    margin-left: 67px;
+}
+
 .box-menu {
     width: 602px;
     height: 608px;
     position: relative;
-    box-shadow: 0px 0px 5px rgba(195 162 124 / 20%);
 }
 
 .border-over-column::before {
@@ -1254,7 +1456,7 @@ form.form-search button {
     align-items: center;
     gap: 15px 36px;
     position: relative;
-    padding: 65px 65px 0 65px;
+    padding: 67px 64px 0 64px;
     border-bottom: 1px solid #393a34;
 }
 
@@ -1263,9 +1465,9 @@ form.form-search button {
     font-weight: 600;
     font-size: 14px;
     line-height: 25px;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     cursor: pointer;
     position: relative;
     color: #FFF;
@@ -1274,30 +1476,31 @@ form.form-search button {
 .widget-menu-tab .item-title.active::after {
     position: absolute;
     content: '';
-    bottom: 0px;
-    left: 1px;
-    width: 95%;
-    height: 2px;
+    bottom: -1px;
+    left: -1px;
+    width: 100%;
+    height: 3px;
     background-color: #c6ac83;
 }
 
 .widget-content-tab {
-    padding: 50px 65px 65px 65px ;
+    padding: 47px 64px 65px 63px;
 }
 
-.menu-item {
-    margin-bottom: 27px;
+.wg-menu-item {
+    margin-bottom: 25px;
 }
 
-.menu-item .name {
+.wg-menu-item .name {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     color: #c6ac83;
+    letter-spacing: 1px;
     text-transform: uppercase;  
 }
 
-.menu-item .line {
+.wg-menu-item .line {
     flex-grow: 1;
     height: 12px;
     margin-left: 12px;
@@ -1308,12 +1511,91 @@ form.form-search button {
 .price {
     font-size: 22px;
     line-height: 28px;
-    font-family: 'CerebriSans';
+    font-weight: 600;
     color: #c6ac83;
 }
 
+.wg-menu-item p {
+    letter-spacing: 0.3px;
+    margin: 1px 0 0 -1px;
+}
+
+/* wg-reservations */
+/* --------------------------------- */
+.wg-reservations {
+    padding-top: 135px;
+    padding-bottom: 129px;
+}
+
+.wg-reservations .content {
+    padding-top: 60px;
+}
+
+.wg-reservations .content .heading-section .sub {
+    font-size: 27px;
+}
+
+.wg-reservations .content .heading-section .main {
+    margin-bottom: 10px;
+}
+
+.wg-reservations .content .heading-section .divider {
+    margin-top: 34px;
+    margin-bottom: 52px;
+}
+
+.wg-reservations .image {
+    margin-left: 31px;
+}
+
+.wg-reservations form {
+    max-width: 430px;
+    margin: auto;
+}
+
+.wg-reservations form input {
+    margin-bottom: 20px;
+}
+
+.wg-reservations form .bot {
+    margin-top: 30px;
+}
+
+/* wg-location */
+/* ---------------------------------- */
+.wg-location .box-map {
+    width: 94.5%;
+    height: 100%;
+    position: relative;
+    margin-right: 32px;
+}
+
+.wg-location .content {
+    padding-top: 41px;
+    text-align: center;
+}
+
+.wg-location .content .heading-section .sub {
+    font-size: 27px;
+}
+
+.wg-location .content .heading-section .main {
+    margin-bottom: 11px;
+}
+
+.wg-location .content .title {
+    font-family: 'CerebriSans';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+
+
+
 /* gallery */
-/* ----------------------- */
+/* ----------------------------------- */
 .gallery-item {
     position: relative;
     overflow: hidden;

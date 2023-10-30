@@ -567,6 +567,8 @@ select{
     content: '\e91d';
     right: 15px;
     top: 35%;
+    padding-top: 4px;
+    padding-left: 7px;
     width: 20px;
     height: 20px;
     font-family: 'icomoon';
@@ -922,6 +924,9 @@ h6 {
 .h-full {
     height: 100%;
 }
+.mt-2 {
+    margin-top: 2px !important;
+}
 .mt-30 {
     margin-top: 30px !important;
 }
@@ -1088,9 +1093,9 @@ a:focus {
     height: 50px;
     padding: 0 33px 0 32px;
     border: 1px solid #c6ac83;
-    background-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 7px;
     color: #FFF;
     font-family: 'CerebriSans';
@@ -1098,6 +1103,8 @@ a:focus {
     line-height: 25px;
     font-weight: 500;
     letter-spacing: 2px;
+    background-size: 300%;
+    background-image: linear-gradient(340deg, #e6c9a2 50%, #fff0 50%);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition   : all 0.3s ease-in-out;
     -ms-transition    : all 0.3s ease-in-out;
@@ -1105,6 +1112,9 @@ a:focus {
     transition        : all 0.3s ease-in-out;
 }
 
+.button-two-line:hover {
+    background-position: 98%;
+}
 
 .button-two-line::before {
     position: absolute;
@@ -1136,6 +1146,13 @@ a:focus {
     transition        : all 0.3s ease-in-out;
 }
 
+.button-two-line:hover::before,
+.button-two-line:hover::after {
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+}
+
 
 /* header */
 /* -------------------------------------------------------------- */
@@ -1149,16 +1166,17 @@ a:focus {
 .header-top {
     display: flex;
     align-items: center;
-    max-width: 1620px;
+    max-width: 1619px;
     margin: auto;
     justify-content: space-between;
     padding-top: 23px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
 }
 
 .header-top > .left {
     display: flex;
     gap: 61px;
+    margin-left: -1px;
 }
 
 .wg-information {
@@ -1176,21 +1194,21 @@ a:focus {
     justify-content: center;
 }
 
-.wg-information .icon svg {
-
-}
-
 .wg-information p {
     letter-spacing: 0.3px;
 }
 
 .header-top > .right {
     display: flex;
-    gap: 54px;
+    gap: 55px;
 }
 
 .header-top > .right .wg-information {
-    gap: 20px;
+    gap: 19px;
+}
+
+.header-top > .right .wg-information .icon {
+    margin-top: 2px;
 }
 
 .wg-information .number-phone {
@@ -1201,6 +1219,7 @@ a:focus {
 .header-top > .right .button-right a {
     width: 180px;
     justify-content: center;
+    margin-top: 2px;
 }
 
 /* header-inner */
@@ -1227,16 +1246,18 @@ a:focus {
 }
 
 .header-left {
-    padding: 41px 50px 42px 41px;
+    padding: 41px 50px 42px 40px;
     border-right: 1px solid #4e4a3d;
+    position: relative;
 }
 
 .header-right {
-    padding: 34px 47px 36px 54px;
+    padding: 34px 48px 36px 54px;
     border-left: 1px solid #4e4a3d;
     display: flex;
     align-items: center;
     gap: 30px;
+    position: relative;
 }
 
 .header-search .show-search {
@@ -1254,7 +1275,7 @@ a:focus {
 
 .header-search .top-search {
     position: absolute;
-    top: 75px;
+    top: 100%;
     right: 0;
     min-width: 240px;
     display: none;
@@ -1299,11 +1320,10 @@ a:focus {
 .canvas {
     width: 52px;
     height: 26px;
-    position: relative;
 }
 
 .canvas > .canvas-button {
-    position: absolute;
+    position: relative;
     content: '';
     top: 0;
     left: 0;
@@ -1344,8 +1364,8 @@ a:focus {
 
 .wg-welcom {
     position: absolute;
-    top: 67px;
-    left: 15px;
+    top: 100%;
+    left: 0px;
     width: 500px;
     padding: 60px 40px 50px;
     background-color: #182125;
@@ -1393,12 +1413,6 @@ a:focus {
     color: #c6ac83;
 }
 
-
-
-
-
-
-
 /* main-nav */
 .main-nav {
     flex-grow: 1;
@@ -1408,7 +1422,7 @@ a:focus {
     display: flex;
     gap: 58px;
     justify-content: center;
-    padding-left: 29px;
+    padding-left: 28px;
     padding-top: 3px;
 }
 
@@ -2033,7 +2047,8 @@ a:focus {
     line-height: 32px;
     font-weight: 600;
     font-style: italic;
-    margin-bottom: 10px;
+    letter-spacing: 0.6px;
+    margin-bottom: 16px;
 }
 
 .heading-section .main {
@@ -2042,8 +2057,17 @@ a:focus {
     font-weight: 700;
     line-height: 55px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-top: 11px;
+    margin-bottom: 25px;
+}
+
+.heading-section .text {
+    font-family: 'CerebriSans';
+    font-size: 17px;
+    line-height: 28px;
+    color: #FFF;
+    margin-bottom: 30px;
 }
 
 .divider {
@@ -2051,24 +2075,24 @@ a:focus {
     height: 1px;
     background-color: #c6ac83;
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 45px;
 }
 
 .divider div {
     position: absolute;
     border: 1px solid #c6ac83;
-    width: 26px;
-    height: 26px;
-    transform: translate(-50%,-50%) rotate(45deg);
+    width: 19px;
+    height: 19px;
+    transform: translate(3px,-50%) rotate(45deg);
     background-color: #0e1618;
 }
 
 .divider div::after {
     position: absolute;
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background-color: #c6ac83;
     top: 50%;
     left: 50%;
@@ -2082,16 +2106,19 @@ a:focus {
     line-height: 33px;
     font-weight: 600;
     font-style: italic;
-    margin-bottom: 10px;
+    letter-spacing: 0.45px;
+    margin-bottom: 15px;
 }
 
 ul.list-content li p {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    letter-spacing: 0.1px;
 }
 
 ul.list-content li p.text {
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
+    letter-spacing: 0.3px;
 }
 
 .heading-section.text-center .divider {
@@ -2101,7 +2128,7 @@ ul.list-content li p.text {
 }
 
 .heading-section.text-center .divider div {
-    left: 50%;
+    left: 46%;
 }
 
 /* preload */
@@ -2176,10 +2203,6 @@ ul.list-content li p.text {
     transition: all 400ms linear;
 }
 
-.progress-wrap:hover::after {
-    animation: 1s tf-buzz-out alternate linear infinite;
-}
-  
 .progress-wrap.active-progress {
     opacity: 1;
     visibility: visible;
