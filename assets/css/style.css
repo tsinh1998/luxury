@@ -933,6 +933,18 @@ h6 {
 .mt-30 {
     margin-top: 30px !important;
 }
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+.pt-150 {
+    padding-top: 150px !important;
+}
+.pb-120 {
+    padding-bottom: 120px !important;
+}
+.pb-84 {
+    padding-bottom: 84px !important;
+}
 .capitalize {
     text-transform: capitalize;
 }
@@ -2063,6 +2075,7 @@ a:focus {
 
 .footer-1 .widget-social {
     margin-top: 32px;
+    margin-bottom: 15px;
 }
 
 .footer-1 .widget-social ul {
@@ -2222,38 +2235,42 @@ a:focus {
     color: #c6ac83;
 }
 
-/* .banner-page .content.contact {
-    background-image: url(../images/bg-section/bg-contact.jpg);
+.banner-page.inner-page .content {
+    padding-top: 153px;
+    padding-bottom: 166px;
 }
 
-.banner-page .content.portfolio {
-    background-image: url(../images/bg-section/bg-portfolio.jpg);
+.banner-page.inner-page .content p {
+    margin-top: 22px;
 }
 
-.banner-page .content.book-a-table {
-    background-image: url(../images/bg-section/bg-book-a-table.jpg);
-}
-
-.banner-page .content.our-menu {
-    background-image: url(../images/bg-section/bg-menu.jpg);
-    padding-bottom: 119px;
-}
-
-.banner-page .content.about {
+.banner-page.about {
     background-image: url(../images/bg-section/bg-about-us.jpg);
 }
 
-.banner-page .content.our-chef {
-    background-image: url(../images/bg-section/bg-our-chef.jpg);
+.banner-page.book-table {
+    background-image: url(../images/bg-section/bg-book-a-table.jpg);
 }
 
-.banner-page .content.space {
-    background-image: url(../images/bg-section/bg-space.jpg);
+.banner-page.faqs {
+    background-image: url(../images/bg-section/bg-faq.jpg);
 }
 
-.banner-page .content.shop {
-    background-image: url(../images/bg-section/bg-shop.jpg);
-} */
+.banner-page.gallery-page {
+    background-image: url(../images/bg-section/bg-gallery.jpg);
+}
+
+.banner-page.chef-page {
+    background-image: url(../images/bg-section/bg-chef.jpg);
+}
+
+.banner-page.our-services {
+    background-image: url(../images/bg-section/bg-service.jpg);
+}
+
+.banner-page.services-detail {
+    background-image: url(../images/bg-section/bg-service-detail.jpg);
+}
 
 /* heading-section */
 /* --------------------------- */
