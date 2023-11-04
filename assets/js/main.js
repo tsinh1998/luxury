@@ -220,11 +220,11 @@
     if ($('div').hasClass('wg-shop')) {
       $('.button-list').on('click',function() {
           $('.wg-shop-content').find('.col-md-6').removeClass('col-md-6').addClass('col-xl-12');
-          $('.wg-shop-content').find('.product-item').addClass('style-list');
+          $('.wg-shop-content').find('.shop-item').addClass('style-list');
         })
       $('.button-grid').on('click',function() {
           $('.wg-shop-content').find('.col-xl-12').removeClass('col-xl-12').addClass('col-md-6');
-          $('.wg-shop-content').find('.product-item').removeClass('style-list');
+          $('.wg-shop-content').find('.shop-item').removeClass('style-list');
       })
     }
   };

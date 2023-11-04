@@ -281,21 +281,71 @@
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="desc">“Basilico Private Rooms have the ability of making you feel entirely at home whilst maintaining a real sense of occasion. Outstanding in their elegant interiors and attentive service, they are inviting, familial and not in the least bit stuffy.”</div>
+                            <div class="desc">“Basilico Private Rooms have the ability of making you feel entirely at home whilst maintaining a <br> real sense of occasion. Outstanding in their elegant interiors and attentive service, they are inviting, familial and not in the least bit stuffy.”</div>
                             <div class="slider-wrap">
-
+                                <div class="swiper-container" data-swiper='{
+                                    "spaceBetween": 30,
+                                    "slidesPerView": 1,
+                                    "navigation": {
+                                        "nextEl": ".services-next",
+                                        "prevEl": ".services-prev"
+                                    }
+                                }'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/images/box-item/service-detail-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/images/box-item/service-detail-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image">
+                                                <img src="assets/images/box-item/service-detail-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next button-style-arrow services-next"></div>
+                                <div class="swiper-button-prev button-style-arrow services-prev"></div>
                             </div>
                             <p class="text">The Brochette Private Rooms – on a raised level with views of the restaurant beyond – are available for a maximum of 24 guests, or the rooms can be split into two, one room to seat 16 guests and the other to seat 10.</p>
                             <p>Complementing the Old World charm of the main dining room, the dark wood panelling, brass fixtures, marble counters, green leather seating and original paintings from the restaurant’s outstanding collection, make for a warm and inviting space well-suited to a variety of occasions and events.</p>
-                            <p>The menus use seasonal produce and ingredients vary throughout the year; each created by The Delaunay’s Head Chef, Christian Turner. We are of course pleased to cater for any dietary requirements you or your guests may have. Furthermore, one of our dedicated event planners will coordinate every aspect of your experience with us, personally on hand to assist with any requirements you might have.</p>
+                            <p class="mb-0">The menus use seasonal produce and ingredients vary throughout the year; each created by The Delaunay’s Head Chef, Christian Turner. We are of course pleased to cater for any dietary requirements you or your guests may have. Furthermore, one of our dedicated event planners will coordinate every aspect of your experience with us, personally on hand to assist with any requirements you might have.</p>
                         </div>
                     </div>
                 </div>
                 <div class="themesflat-container w1620">
                     <div class="row">
                         <div class="col-xl-6">
-                            <div class="image-item">
-                                <img src="assets/images/box-item/service-detail-bot-1.jpg" alt="">
+                            <div class="services-detail-item">
+                                <div class="image">
+                                    <img src="assets/images/box-item/service-detail-bot-1.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="wrap">
+                                        <div class="title"><a href="#">The Private Dining Room</a></div>
+                                        <div class="text">Seats up to 24 , 12.9m x 4.2m</div>
+                                        <p>Our main Private Room is particularly popular for working breakfasts, lunches, presentations, celebratory teas and birthday dinners. Simul per omittantur voluptatibus viderer vero nam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="services-detail-item">
+                                <div class="image">
+                                    <img src="assets/images/box-item/service-detail-bot-2.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="wrap">
+                                        <div class="title"><a href="#">The Corner Room</a></div>
+                                        <div class="text">Seats up to 10 , 5.3m x 4.2m</div>
+                                        <p>Our main Private Room is particularly popular for working breakfasts, lunches, presentations, celebratory teas and birthday dinners. Simul per omittantur voluptatibus viderer vero nam.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -303,8 +353,6 @@
 
             </div>
             <!-- /services-detail-content -->
-
-
 
             <!-- wg-testimonial -->
             <div class="wg-testimonial style-1 t1">
@@ -369,7 +417,62 @@
             </div>
             <!-- /wg-testimonial -->
 
-
+            <!-- wg-reservations -->
+            <div class="wg-reservations style-2 snare-before snare-after">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content">
+                                <div class="heading-section text-center">
+                                    <div class="sub">Reservations</div>
+                                    <div class="main">booking a table</div>
+                                    <div class="text">After booking we will call the customer to confirm, so please <br> enter your name and phone number is required</div>
+                                    <div class="divider mb-0"><div></div></div>
+                                </div>
+                                <form class="book-form">
+                                    <div class="columns">
+                                        <fieldset class="name">
+                                            <input type="text" placeholder="Name*" class="" name="name" tabindex="2" value="" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="phone">
+                                            <input type="text" placeholder="Phone*" class="" name="text" tabindex="2" value="" aria-required="true" required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="columns">
+                                        <fieldset class="select event-number">
+                                            <select class="">
+                                                <option value="Subject" selected="">Event</option>
+                                                <option value="Subject">Party</option>
+                                                <option value="Subject">Birthday</option>
+                                            </select>
+                                        </fieldset>
+                                        <fieldset class="time select">
+                                            <input type="date" class="" name="date" tabindex="2" value="2023-06-18" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="hour select">
+                                            <input type="time" class="" name="time" tabindex="2" value="19:00" aria-required="true" required="">
+                                        </fieldset>
+                                        <fieldset class="select event-number">
+                                            <select class="">
+                                                <option value="Subject" selected="">2 Person</option>
+                                                <option value="Subject">5 Person</option>
+                                                <option value="Subject">10 Person</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                    <fieldset class="message">
+                                        <textarea id="message" name="message" rows="4" placeholder="Message" class="" tabindex="4" aria-required="true" required=""></textarea>
+                                    </fieldset>
+                                    <div class="bot">
+                                        <a href="" class="button-two-line m-auto" type="submit">BOOK A PRIVATE TABLE</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /wg-reservations -->
             
             <!-- footer -->
             <footer id="footer" class="footer">

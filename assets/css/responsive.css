@@ -101,7 +101,10 @@
 }
 
 @media (max-width: 1180px) {
-   
+    .services-detail-item:hover .content .wrap {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -226,6 +229,12 @@
     .wg-about-us .image {
         margin-top: 30px;
     }
+    .shop-item.style-list .content {
+        flex-wrap: wrap;
+    }
+    .cart-item {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 768px) {
@@ -324,5 +333,15 @@
     .coming-soon-wrap .desc {
         font-size: 30px;
         line-height: 40px;
+    }
+    .services-detail-item .content {
+        position: unset;
+    }
+    .banner-page .content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .shop-item.style-list .price {
+        text-align: center;
     }
 }

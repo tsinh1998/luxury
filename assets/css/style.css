@@ -618,8 +618,8 @@ select option {
 select.style-1 {
     margin-bottom: 0;
     color: #fff;
-    background-color: #111111;
-    min-width: 193px;
+    background-color: #0e1618;
+    min-width: 217px;
 }
 
 form .columns {
@@ -2270,6 +2270,10 @@ a:focus {
 
 .banner-page.services-detail {
     background-image: url(../images/bg-section/bg-service-detail.jpg);
+}
+
+.banner-page.shop-page {
+    background-image: url(../images/bg-section/bg-shop.jpg);
 }
 
 /* heading-section */
