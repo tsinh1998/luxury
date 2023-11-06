@@ -44,6 +44,17 @@
         flex-grow: 1;
         margin-left: -300px;
     }
+    .wg-shop-detail .content-inner {
+        padding-left: 0;
+    }
+    .page-menu-wrap > .left {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .page-menu-wrap .right .wrap {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -188,6 +199,7 @@
         gap: 15px;
         justify-content: center;
     }
+    .page-menu-wrap .right .list-menu,
     .chef-item-full,
     .wg-chef .top {
         flex-wrap: wrap;
@@ -220,6 +232,12 @@
         right: 15px;
         transform: none;
     }
+    .page-menu-wrap > .left {
+        width: 35%;
+    }
+    .page-menu-wrap > .right {
+        width: 65%;
+    }
 }
 
 @media (max-width: 820px) {
@@ -243,6 +261,9 @@
     }
     .wg-about-slider > img {
         display: none;
+    }
+    .quantity {
+        width: 110px;
     }
 }
 
@@ -307,11 +328,13 @@
     .wg-location .box-map {
         height: 500px;
     }
+    .page-menu-wrap,
     form .columns,
     .wg-reservations.style-1,
     .wg-action form {
         flex-wrap: wrap;
     }
+    .page-menu-wrap > div,
     .event-grid > div,
     .wg-action form .button-two-line,
     .portfolio-item,

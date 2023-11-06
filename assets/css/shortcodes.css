@@ -993,13 +993,13 @@ form.form-search button {
     letter-spacing: 1.7px;
 }
 
-.page-title .content .heading {
+.page-title.home-2 .content .heading {
     padding-left: 0px;
     margin-top: 10px;
     margin-bottom: 1px;
 }
 
-.page-title .content p {
+.page-title.home-2 .content p {
     letter-spacing: 0.35px;
 }
 
@@ -1815,6 +1815,28 @@ form.form-search button {
     margin-top: 67px;
 }
 
+/* style-2 */
+.tabs-description {
+    padding-bottom: 122px;
+}
+
+.widget-tabs.style-2 .widget-menu-tab {
+    padding: 0;
+    gap: 15px 53px;
+    justify-content: start;
+}
+
+.widget-tabs.style-2 .widget-menu-tab .item-title {
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+}
+
+.widget-tabs.style-2 .widget-content-tab {
+    padding: 36px 0 0 0;
+}
+
 /* wg-reservations */
 /* --------------------------------- */
 .wg-reservations {
@@ -2530,13 +2552,13 @@ form.form-search button {
     position: relative;
 }
 
-.wg-about-slider > img {
+.snare-half > img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.wg-about-slider > img.item-2 {
+.snare-half > img.item-2 {
     left: auto;
     right: 0;
     transform: rotateY(180deg);
@@ -3116,40 +3138,49 @@ a.mapboxgl-ctrl-logo {
 
 /* page-menu-wrap */
 /* ----------------------------- */
-  
-.page-menu-wrap {
+/* page-menu1-wrap */
+.page-menu1-wrap {
     display: flex;
 }
 
-.page-menu-wrap > .left {
+.page-menu1-wrap > .left {
     text-align: center;
+    background-color: #182125;
+    padding: 129px 16px 10px 10px;
+    width: 26.1%;
 }
 
-.brochette_restaurant {
+#curved-text {
     font-size: 17px;
     font-family: "Cerebri Sans";
     color: rgb(198, 172, 131);
     text-transform: uppercase;
     line-height: 3.529;
+    margin-bottom: -34px;
 }
   
-.page-menu-wrap .heading {
+.page-menu1-wrap .heading {
     font-weight: 600;
     font-size: 45px;
     line-height: 60px;
     color: #c6ac83;
     text-transform: uppercase;
+    margin-top: 17px;
+    letter-spacing: 4.5px;
 }
 
 .widget-menu-tab.stye-full {
     flex-wrap: wrap;
     border-bottom: none;
-    padding: 65px;
+    padding: 61px 0 79px;
+    gap: 35px;
 }
 
 .widget-menu-tab.stye-full li {
     width: 100%;
     font-size: 19px;
+    letter-spacing: 1.9px;
+    padding-bottom: 0;
 }
 
 .widget-menu-tab.stye-full li::after {
@@ -3168,67 +3199,86 @@ a.mapboxgl-ctrl-logo {
     position: absolute;
     content: '';
     width: 12px;
-    height: 12px;
+    width: 7px;
+    height: 7px;
     background-color: #c6ac83;
     top: 50%;
-    left: -20px;
+    left: -17px;
     transform: translate(-50%,-50%) rotate(45deg);
 }
 
 .widget-menu-tab.stye-full li.active span::before {
     position: absolute;
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 7px;
+    height: 7px;
     background-color: #c6ac83;
     top: 50%;
-    right: -30px;
+    right: -20px;
     transform: translate(-50%,-50%) rotate(45deg);
 }
 
-.page-menu-wrap .inner .title {
+.page-menu1-wrap .right .wrap {
+    padding: 122px 145px 43px 93px;
+}
+
+.page-menu1-wrap .right {
+    width: 73.9%;
+}
+
+.page-menu1-wrap .right .title {
     font-weight: 600;
     font-size: 45px;
     line-height: 60px;
     color: #fff;
     text-transform: uppercase;
     position: relative;
-    padding-left: 40px;
-    margin-bottom: 30px;
+    padding-left: 44px;
+    margin-bottom: 52px;
+    letter-spacing: 2px;
 }
 
-.page-menu-wrap .inner .title::before {
+.page-menu1-wrap .right .title::before {
     position: absolute;
     content: '';
     border: 1px solid #c6ac83;
     top: 50%;
     left: 0;
-    width: 26px;
-    height: 26px;
-    transform: translate(-50%,-50%) rotate(45deg);
+    width: 19px;
+    height: 19px;
+    transform: translate(3px,-50%) rotate(45deg);
     background-color: #0e1618;
 }
 
-.page-menu-wrap .inner .title::after {
+.page-menu1-wrap .right .title::after {
     position: absolute;
     content: '';
     width: 12px;
     height: 12px;
     background-color: #c6ac83;
     top: 50%;
-    left: 50%;
-    top: 50%;
     left: 0;
-    transform: translate(-50%,-50%) rotate(45deg);
+    transform: translate(50%,-50%) rotate(45deg);
 }
 
-.page-menu-wrap .inner .list-menu {
+.page-menu1-wrap .right .list-menu {
     display: flex;
-    gap: 50px;
+    gap: 25px 50px;
 }
 
-.page-menu-wrap .inner .list-menu > div {
+.page-menu1-wrap .right .list-menu > div {
     width: 100%;
+}
+
+.page-menu1-wrap .wg-menu-item .price {
+    letter-spacing: 0;
+    font-family: 'CormorantInfant';
+}
+
+/* page-menu2-wrap */
+.page-menu2-wrap {
+    padding-top: 150px;
+    padding-bottom: 144px;
 }
 
 /* wg-about-hour */
@@ -4250,7 +4300,7 @@ a.mapboxgl-ctrl-logo {
 /* --------------------------------------- */
 .wg-shop-detail {
     padding-top: 135px;
-    padding-bottom: 65px;
+    padding-bottom: 53px;
 }
 
 .wg-shop-detail .content-inner {
@@ -4308,57 +4358,67 @@ a.mapboxgl-ctrl-logo {
     line-height: 30px;
     font-family: 'CerebriSans';
     text-transform: capitalize;
-    letter-spacing: 0.7px;
 }
 
 .wg-quantity {
     display: flex;
-    gap: 15px;
+    gap: 17px;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 29px;
 }
 
 .wg-quantity > a i {
-    margin-left: 8px;
-    font-size: 20px;
+    margin-left: 4px;
+    font-size: 17px;
 }
 
 .quantity {
-    width: 66px;
+    width: 136px;
     height: 50px;
     border-radius: 5px;
-    background-color: #2d2723;
+    background-color: #272e30;
     position: relative;
 }
 
 .quantity input {
-    padding: 0 0 0 17px !important;
-    background-color: #2d2723 !important;
+    padding: 0 35px 0 35px !important;
+    background-color: #272e30 !important;
+    border: none !important;
     color: #FFF !important;
+    text-align: center;
 }
 
 .quantity .plus-btn {
     position: absolute;
-    top: 6px;
-    right: 6px;
+    top: 0px;
+    right: 0px;
+    width: 35px;
+    height: 100%;
     font-size: 18px;
-    color: #FFF;
+    line-height: 45px;
+    text-align: center;
+    color: #c6ac83;
     cursor: pointer;
 }
 
 .quantity .minus-btn {
     position: absolute;
-    bottom: 9px;
-    right: 6px;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
     font-size: 18px;
-    color: #FFF;
+    line-height: 45px;
+    text-align: center;
+    color: #c6ac83;
     cursor: pointer;
 }
 
 .wg-quantity > a {
-    letter-spacing: 2.2px;
+    letter-spacing: 1.8px;
     padding: 0 33px 0 36px;
+    gap: 16px;
 }
 
 .add-wishlist a {
@@ -4380,63 +4440,100 @@ a.mapboxgl-ctrl-logo {
     font-weight: 400;
     font-size: 17px;
     line-height: 33px;
+    letter-spacing: 0.3px;
     color: #fff;
 }
 
 .wg-shop-detail .content-inner .more-infor ul li span {
-    color: #666666;
+    color: #fff;
 }
 
 .wg-shop-detail .content-inner .widget-social {
-    gap: 20px;
+    gap: 25px;
 }
 
 .wg-shop-detail .content-inner .widget-social ul {
-    gap: 9px;
+    gap: 10px;
 }
 
-.wg-shop-detail .content-inner .widget-social ul li a {
-    background-color: #FFF;
-    border: 1px solid #111111;
+/* wg-related */
+.wg-related {
+    padding-bottom: 65px;
 }
 
-.wg-shop-detail .content-inner .widget-social ul li a:hover {
-    background-color: #111111;
-    color: #FFF;
+.wg-related .heading-section .sub {
+    font-size: 27px;
 }
 
-.widget-tabs.style-1 .widget-menu-tab {
-    justify-content: start;
-    margin-bottom: 34px;
-    gap: 61px;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #dedede;
+.wg-related .heading-section .divider {
+    margin-top: 30px;
+    margin-bottom: 85px;
 }
 
-.widget-tabs.style-1 .widget-menu-tab::after {
-    width: 100%;
+.wg-related .button-style-arrow {
+    background-color: #182125 !important;
+    right: -98px;
+    top: 54%;
 }
 
-.widget-tabs.style-1 .widget-menu-tab .item-title {
-    color: #171412;
-    letter-spacing: 1.7px;
-    padding-bottom: 28px;
-    font-size: 20px;
-    font-weight: 600;
+.wg-related .button-style-arrow:hover {
+    background-color: #c6ac83 !important;
 }
 
-.widget-tabs.style-1 .widget-menu-tab .item-title.active::after {
-    background-color: #111111;
-    bottom: 0;
-    width: 98%;
-    height: 3px;
+.wg-related .button-style-arrow.swiper-button-prev {
+    left: -98px;
 }
 
-.wg-shop-detail .content-inner .title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #c6ac83;
+/* wg-404 */
+/* --------------------------------- */
+.wg-404 {
+    height: 100vh;
+    background-color: #0e1618;
+}
+
+.wg-404 .content {
+    padding-top: 243px;
+    text-align: center;
+    padding-left: 17px;
+}
+
+.wg-404 .title {
+    position: relative;
+}
+
+.wg-404 .title::after {
+    position: absolute;
+    content: '4';
+    font-family: 'Cirka Light';
+    top: -41px;
+    right: 50%;
+    transform: translateX(313px);
+    font-size: 297px;
+}
+
+.wg-404 .title::before {
+    position: absolute;
+    content: '4';
+    font-family: 'Cirka Light';
+    top: -41px;
+    left: 50%;
+    transform: translateX(-309px);
+    font-size: 297px;
+}
+
+.wg-404 .text {
+    font-size: 75px;
+    line-height: 90px;
+    font-family: 'PS Demo';
     text-transform: uppercase;
-    letter-spacing: 0.7px;
+    color: #c6ac83;
+    letter-spacing: 7.5px;
+    margin-bottom: 22px;
+    margin-top: 60px;
+}
+
+.wg-404 p {
+    font-size: 19px;
+    line-height: 30px;
+    margin-bottom: 45px;
 }

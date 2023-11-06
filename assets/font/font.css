@@ -166,3 +166,10 @@
     font-display: swap;
     src: url('DancingScript-Bold.ttf');
 }
+@font-face {
+    font-family: 'Cirka Light';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('Cirka-Variable.ttf');
+}

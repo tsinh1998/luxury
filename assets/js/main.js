@@ -373,7 +373,16 @@
             $(this).addClass("active");
             btn.text(txt);
         });
-}}
+  }}
+
+
+  var curvedtext = function () {
+    if ($('div').hasClass('curved-text')) {
+      var demo = new CircleType(document.getElementById('curved-text')).radius(180);
+    }
+  }
+  
+  
 
   var retinaLogos = function() {
     var retina = window.devicePixelRatio > 1 ? true : false;
@@ -414,6 +423,7 @@
     cursor();
     buttonHeart();
     dropdown('#select-language');
+    curvedtext();
     retinaLogos();
     preloader();
   });

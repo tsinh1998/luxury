@@ -703,60 +703,6 @@ input[type="color"]::placeholder {
     color      : #fff;
 }
 
-/* textarea.style-1,
-input[type="text"].style-1,
-input[type="password"].style-1,
-input[type="datetime"].style-1,
-input[type="datetime-local"].style-1,
-input[type="date"].style-1,
-input[type="month"].style-1,
-input[type="time"].style-1,
-input[type="week"].style-1,
-input[type="number"].style-1,
-input[type="email"].style-1,
-input[type="url"].style-1,
-input[type="search"].style-1,
-input[type="tel"].style-1,
-input[type="color"].style-1 {
-    
-}
-
-textarea.style-1::placeholder,
-input[type="text"].style-1::placeholder,
-input[type="password"].style-1::placeholder,
-input[type="datetime"].style-1::placeholder,
-input[type="datetime-local"].style-1::placeholder,
-input[type="date"].style-1::placeholder,
-input[type="month"].style-1::placeholder,
-input[type="time"].style-1::placeholder,
-input[type="week"].style-1::placeholder,
-input[type="number"].style-1::placeholder,
-input[type="email"].style-1::placeholder,
-input[type="url"].style-1::placeholder,
-input[type="search"].style-1::placeholder,
-input[type="tel"].style-1::placeholder,
-input[type="color"].style-1::placeholder {
-    
-}
-
-textarea.style-1:focus,
-input[type="text"].style-1:focus,
-input[type="password"].style-1:focus,
-input[type="datetime"].style-1:focus,
-input[type="datetime-local"].style-1:focus,
-input[type="date"].style-1:focus,
-input[type="month"].style-1:focus,
-input[type="time"].style-1:focus,
-input[type="week"].style-1:focus,
-input[type="number"].style-1:focus,
-input[type="email"].style-1:focus,
-input[type="url"].style-1:focus,
-input[type="search"].style-1:focus,
-input[type="tel"].style-1:focus,
-input[type="color"].style-1:focus {
-    
-} */
-
 /* Button */
 button,
 input[type="button"],
@@ -2274,6 +2220,10 @@ a:focus {
 
 .banner-page.shop-page {
     background-image: url(../images/bg-section/bg-shop.jpg);
+}
+
+.banner-page.menu-page {
+    background-image: url(../images/bg-section/bg-menu.jpg);
 }
 
 /* heading-section */
