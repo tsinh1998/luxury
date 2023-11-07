@@ -2226,6 +2226,14 @@ a:focus {
     background-image: url(../images/bg-section/bg-menu.jpg);
 }
 
+.banner-page.contact-page {
+    background-image: url(../images/bg-section/bg-contact.jpg);
+}
+
+.banner-page.portfolio-page {
+    background-image: url(../images/bg-section/bg-portfolio.jpg);
+}
+
 /* heading-section */
 /* --------------------------- */
 .heading-section .sub {

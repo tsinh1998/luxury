@@ -1237,7 +1237,15 @@ form.form-search button {
 }
 
 .wg-video-full.h649 {
-    height: 649px;
+    height: 649px !important;
+}
+
+.wg-video-full.h504 {
+    height: 504px !important;
+}
+
+.wg-video-full.style-2 {
+    background-image: url(../images/box-item/img-full-parallax-1.jpg);
 }
 
 /* wg-private-event */
@@ -1706,7 +1714,6 @@ form.form-search button {
 }
 
 .price {
-    font-family: 'CerebriSans';
     font-size: 22px;
     line-height: 28px;
     font-weight: 400;
@@ -1715,7 +1722,7 @@ form.form-search button {
 
 .wg-menu-item p {
     letter-spacing: 0.3px;
-    margin: 1px 0 0 -1px;
+    margin: 1px 0 0 0px;
 }
 
 /* style-1 */
@@ -2405,6 +2412,16 @@ form.form-search button {
     width: 100%;
 }
 
+.portfolio-item .content .wrap .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #c6ac83;
+    transform: translateY(-50%) rotate(45deg);
+    margin: auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
 /* style-mansory */
 .portfolio-item.style-mansory .content {
     top: unset;
@@ -2757,9 +2774,14 @@ form.form-search button {
 
 /* wg-map */
 /* --------------------------------------- */
+.wg-map {
+    padding-top: 150px;
+}
+
 .wg-map .top {
     position: relative;
     height: 533px;
+    filter: grayscale(100%);
 }
 
 #map2,
@@ -2788,9 +2810,20 @@ a.mapboxgl-ctrl-logo {
 }
 
 .wg-map .bottom {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    margin-bottom: 30px;
+    padding-top: 85px;
+    padding-bottom: 76px;
+    position: relative;
+}
+
+.wg-map .bottom::after {
+    position: absolute;
+    content: '';
+    width: 1170px;
+    height: 1px;
+    background-color: #414036;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 
 .contact-item {
@@ -2803,14 +2836,14 @@ a.mapboxgl-ctrl-logo {
     content: '';
     width: 1px;
     height: 197px;
-    right: 0;
+    right: -17px;
     background-color: #414036;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
 }
 
 .contact-item .image {
-    margin-bottom: 20px;
+    margin-bottom: 9px;
 }
 
 .contact-item .title {
@@ -2818,7 +2851,49 @@ a.mapboxgl-ctrl-logo {
     line-height: 48px;
     color: #FFF;
     text-transform: uppercase;
-    font-family: 'CerebriSans';
+    font-family: 'Cirka Light';
+    letter-spacing: 1.7px;
+}
+
+.contact-item p {
+    margin-top: 7px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+/* wg-quetion */
+/* -------------------------------------- */
+.wg-quetion  {
+    padding-top: 142px;
+    padding-bottom: 159px;
+}
+
+.wg-quetion .heading-section .title {
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    color: #c6ac83;
+    margin-bottom: 18px;
+}
+
+.wg-quetion .heading-section p {
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+}
+
+.wg-quetion .heading-section .divider {
+    margin-bottom: 85px;
+}
+
+.wg-quetion form textarea {
+    height: 229px !important;
+    margin-bottom: 55px;
+}
+
+.wg-quetion form .bot a {
+    letter-spacing: 3px;
 }
 
 /* faqs */
@@ -2891,6 +2966,36 @@ a.mapboxgl-ctrl-logo {
 
 .flat-accordion .flat-toggle .toggle-content p:last-child {
     margin-bottom: 0;
+}
+
+/* portfolio-full-width */
+.portfolio-full-width {
+    padding: 118px 5px 104px 7px;
+}
+
+.portfolio-full-width .portfolio-item .title a::after,
+.portfolio-full-width .portfolio-item .title a::before {
+    display: none;
+}
+
+.portfolio-full-width .portfolio-item img {
+    margin-bottom: 30px;
+    height: 598px;
+    object-fit: cover;
+}
+
+/* portfolio-mansonry */
+.portfolio-mansonry {
+    padding-top: 135px;
+    padding-bottom: 105px;
+}
+
+.portfolio-mansonry .portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-mansonry .portfolio-item img {
+    height: unset;
 }
 
 /* porfolio-detail */
@@ -3277,8 +3382,144 @@ a.mapboxgl-ctrl-logo {
 
 /* page-menu2-wrap */
 .page-menu2-wrap {
-    padding-top: 150px;
+    padding-top: 135px;
     padding-bottom: 144px;
+}
+
+.page-menu2-wrap .heading-section img {
+    width: 77px;
+    margin-bottom: 27px;
+}
+
+.page-menu2-wrap .heading-section .main {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.page-menu2-wrap .heading-section .divider {
+    margin-top: 32px;
+}
+
+.page-menu2-wrap .widget-tabs.style-1 .top {
+    margin-top: 44px;
+    margin-bottom: 43px;
+}
+
+.page-menu2-wrap .bottom {
+    padding-left: 23px;
+    padding-right: 19px;
+}
+
+.page-menu2-wrap .bottom > .image-left {
+    width: 100%;
+    max-width: 565px;
+    margin-top: 0 !important;
+}
+
+.page-menu2-wrap .widget-tabs .bottom .widget-content-tab {
+    width: 100%;
+    max-width: 668px;
+    flex-grow: unset;
+    padding: 67px 72px 69px;
+}
+
+.page-menu2-wrap .widget-tabs .swiper-wrapper {
+    padding-bottom: 71px;
+}
+
+.page-menu2-wrap .widget-tabs .wg-menu-item {
+    margin-bottom: 25px !important;
+}
+
+.page-menu2-wrap .widget-tabs .wg-menu-item p {
+    margin-top: 0;
+}
+
+.page-menu2-wrap .widget-tabs .wg-menu-item .price {
+    font-family: 'CormorantInfant';
+}
+
+.page-menu2-wrap .bottom > .image-right {
+    width: 100%;
+    max-width: 568px;
+    margin-top: 0 !important;
+}
+
+.page-menu2-wrap .button-bot {
+    max-width: 667px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* page-menu3-wrap */
+.page-menu3-wrap {
+    padding-top: 130px;
+    padding-bottom: 127px;
+}
+
+.page-menu3-wrap .heading-section .sub {
+    font-size: 27px;
+}
+
+.page-menu3-wrap .heading-section .divider {
+    margin-top: 32px;
+    margin-bottom: 77px;
+}
+
+.page-menu3-wrap .menu-wrap.left {
+    padding-right: 10px;
+}
+
+.page-menu3-wrap .menu-wrap.right {
+    padding-left: 10px;
+}
+
+.page-menu3-wrap.style-1 {
+    padding-top: 109px;
+}
+
+/* wg-fomr-book */
+.wg-fomr-book {
+    padding-top: 117px;
+    padding-bottom: 77px;
+}
+
+.wg-fomr-book .title {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    margin-bottom: 37px;
+}
+
+.wg-fomr-book form .columns {
+    gap: 20px;
+    padding-right: 9px;
+}
+
+.wg-fomr-book form .phone,
+.wg-fomr-book form .name {
+    width: 19.5%;
+}
+
+.wg-fomr-book form .time,
+.wg-fomr-book form .hour,
+.wg-fomr-book form .event-number {
+    width: 12.8%;
+}
+
+.wg-fomr-book form .bot {
+    width: 13.6%;
+}
+
+.wg-fomr-book p {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 24px;
+    letter-spacing: 0.3px;
 }
 
 /* wg-about-hour */
@@ -3776,12 +4017,6 @@ a.mapboxgl-ctrl-logo {
     visibility: visible;
     margin-bottom: 0;
 }
-
-
-
-
-
-
 
 /* wg-shop */
 /* ---------------------------------- */
