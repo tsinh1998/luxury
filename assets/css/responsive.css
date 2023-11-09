@@ -47,11 +47,11 @@
     .wg-shop-detail .content-inner {
         padding-left: 0;
     }
-    .page-menu-wrap > .left {
+    .page-menu1-wrap > .left {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .page-menu-wrap .right .wrap {
+    .page-menu1-wrap .right .wrap {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -62,6 +62,7 @@
         flex-wrap: wrap;
         gap: 15px !important;
     }
+    .portfolio-item.style-carousel,
     .portfolio-item.style-three-colums,
     .portfolio-mansonry .portfolio-item,
     .portfolio-full-width .portfolio-item,
@@ -230,7 +231,7 @@
         gap: 15px;
         justify-content: center;
     }
-    .page-menu-wrap .right .list-menu,
+    .page-menu1-wrap .right .list-menu,
     .chef-item-full,
     .wg-chef .top {
         flex-wrap: wrap;
@@ -263,10 +264,10 @@
         right: 15px;
         transform: none;
     }
-    .page-menu-wrap > .left {
+    .page-menu1-wrap > .left {
         width: 35%;
     }
-    .page-menu-wrap > .right {
+    .page-menu1-wrap > .right {
         width: 65%;
     }
     .page-menu3-wrap .menu-wrap {
@@ -359,13 +360,13 @@
         height: 500px;
     }
     .featured-countdown .countdown__timer,
-    .page-menu-wrap,
+    .page-menu1-wrap,
     form .columns,
     .wg-reservations.style-1,
     .wg-action form {
         flex-wrap: wrap;
     }
-    .page-menu-wrap > div,
+    .page-menu1-wrap > div,
     .event-grid > div,
     .wg-action form .button-two-line,
     .portfolio-item,
@@ -410,5 +411,10 @@
     .related-post {
         flex-wrap: wrap;
         gap: 50px;
+    }
+    .po-sticky {
+        position: unset !important;
+        width: unset !important;
+        margin-top: 0 !important;
     }
 }

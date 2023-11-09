@@ -1194,6 +1194,7 @@ a:focus {
     top: 0;
     left: 50%;
     transform: translateX(-71.5px);
+    z-index: 5;
 }
 
 .site-logo-wrap {
@@ -1209,6 +1210,8 @@ a:focus {
     padding: 41px 50px 42px 40px;
     border-right: 1px solid #4e4a3d;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header-right {
@@ -1414,7 +1417,7 @@ a:focus {
 .menu-primary-menu > li > a::before {
     position: absolute;
     content: '';
-    bottom: -10px;
+    bottom: -12px;
     left: auto;
     right: 0;
     width: 0;
@@ -1607,9 +1610,7 @@ a:focus {
 .header-2 .menu-primary-menu > li:hover > a::before, 
 .header-2 .menu-primary-menu > li.current-menu-item > a::before {
     width: 99%;
-    bottom: -12px;
 }
-
 
 /*Header fixed
 -------------------------------- */

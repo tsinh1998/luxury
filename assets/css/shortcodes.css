@@ -1446,6 +1446,7 @@ form.form-search button {
     left: -163px;
     top: 246px;
     background-image: url(../images/item-background/snare-1.png);
+    animation: rotate360 7s infinite linear ;
 }
 
 /* testimonial-item */
@@ -1765,8 +1766,14 @@ form.form-search button {
     font-size: 13px;
     line-height: 40px;
     font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
+.widget-tabs.style-1 .widget-menu-tab .item-title:hover,
 .widget-tabs.style-1 .widget-menu-tab .item-title.active {
     background-color: #c6ac83;
     color: #FFF;
@@ -2489,9 +2496,13 @@ form.form-search button {
     margin-bottom: 62px;
 }
 
+.portfolio-carousel-1 .swiper-wrapper {
+    padding-bottom: 57px;
+}
+
 .portfolio-item.style-carousel {
-    padding-bottom: 177px;
-    overflow: unset;
+    padding-bottom: 120px;
+    overflow: hidden;
 }
 
 .portfolio-carousel-1 .widget-content-tab {
@@ -2504,7 +2515,7 @@ form.form-search button {
 
 .portfolio-item.style-carousel .content {
     bottom: unset;
-    top: 74%;
+    top: 81%;
     right: 41px;
     left: 30px;
     padding-left: 28px;
@@ -2520,7 +2531,7 @@ form.form-search button {
 }
 
 .portfolio-item.style-carousel:hover .content {
-    bottom: 81px;
+    bottom: 24px;
     top: 36px;
     background-color: #182125;
 }
@@ -2636,6 +2647,137 @@ form.form-search button {
     border: 1px solid #c6ac83;
     z-index: 1;
 }
+
+/* portfolio-carousel-2 */
+.portfolio-carousel-2 {
+    padding-top: 44px;
+}
+
+.portfolio-carousel-2 .heading-section {
+    margin-bottom: 62px;
+}
+
+.portfolio-carousel-2 .swiper-wrapper {
+    padding-bottom: 57px;
+}
+
+.portfolio-carousel-2 .widget-content-tab {
+    padding: 66px 21px 72px 22px;
+}
+
+.portfolio-item.style-carousel.type2 .content {
+    right: 30px;    
+}
+
+.portfolio-item.style-carousel.type2:hover .content {
+    top: 136px;
+}
+
+/* portfolio-carousel-3 */
+.portfolio-carousel-3 {
+    padding-top: 47px;
+}
+
+.portfolio-carousel-3 .heading-section {
+    margin-bottom: 62px;
+}
+
+.portfolio-carousel-3 .widget-content-tab {
+    padding: 67px 0px 72px 0px;
+}
+
+.portfolio-item.style-carousel.type3 {
+    padding-bottom: 0;
+}
+
+.portfolio-item.style-carousel.type3 img {
+    height: 557px;
+}
+
+.portfolio-item.style-carousel.type3 .content {
+    left: 161px;
+    right: 161px;
+    bottom: 56px;
+    top: 57px;
+    transform: scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item.style-carousel.type3:hover .content {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-item.style-carousel.type3:hover .content.box-line-under::after {
+    position: absolute;
+    content: '';
+    border: 1px solid #c6ac83;
+    top: 26px;
+    left: -28px;
+    bottom: 27px;
+    right: -29px;
+    z-index: -1;
+}
+
+.portfolio-item.style-carousel.type3:hover .wrap {
+    border: none;
+}
+
+/* portfolio-carousel-4 */
+.portfolio-carousel-4 {
+    padding-top: 47px;
+    padding-bottom: 136px;
+}
+
+.portfolio-carousel-4 .heading-section {
+    margin-bottom: 62px;
+}
+
+.portfolio-carousel-4 .slider-wrap {
+    max-width: 1636px;
+    margin: auto;
+}
+
+.portfolio-item.style-carousel.type4 {
+    padding-bottom: 84px;
+}
+
+.portfolio-item.style-carousel.type4 img {
+    height: unset;
+}
+
+.portfolio-item.style-carousel.type4 .content {
+    bottom: 0;
+    top: unset;
+    left: 50%;
+    right: unset;
+    width: 100%;
+    max-width: 853px;
+    padding: 29px 30px 26px 29px;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item.style-carousel.type4:hover .content {
+    transform: translateX(-50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-item.style-carousel.type4 .content .title {
+    margin-top: 21px;
+}
+
+.portfolio-item.style-carousel.type4 .content p {
+    margin-bottom: 18px;
+}
+
+
 
 /* portfolio-detail */
 /* -------------------------------- */
@@ -3383,6 +3525,7 @@ a.mapboxgl-ctrl-logo {
     left: 30px;
     border: 1px solid #c6ac83;
     z-index: -1;
+    animation: to-bottom 7s infinite linear;
 }
 
 .all-chefs img {
@@ -3410,6 +3553,10 @@ a.mapboxgl-ctrl-logo {
 
 /* page-menu-wrap */
 /* ----------------------------- */
+.po-sticky.fixed {
+    position: fixed;
+    top: 87px;
+}
 /* page-menu1-wrap */
 .page-menu1-wrap {
     display: flex;

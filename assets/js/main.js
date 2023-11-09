@@ -382,7 +382,32 @@
     }
   }
   
-  
+  var sticky = function() {
+    if ($('body').hasClass('sticky-scroll')) {
+        $(document).ready(function() {
+            var $window = $(window);  
+            var $sidebar = $(".po-sticky"); 
+            var $sidebarHeight = $sidebar.innerHeight();   
+            var $sidebarTop = $(".header-inner").innerHeight();   
+            var $sidebarWidth = $(".po-sticky-wrap").width();   
+            var $footerOffsetTop = $(".po-sticky-footer").offset().top +$(".po-sticky-footer .widget-content-inner.active").innerHeight() ; 
+            var $sidebarOffset = $sidebar.offset().top;
+            
+            $window.scroll(function() {
+            if($window.scrollTop() > $sidebarOffset - $sidebarTop) {
+                $sidebar.addClass("fixed");   
+            } else {
+                $sidebar.removeClass("fixed");   
+            }    
+            if($window.scrollTop() + $sidebarHeight > $footerOffsetTop - $sidebarTop ) {
+                $sidebar.css({"top" : 0 - $sidebarTop -($window.scrollTop() + $sidebarHeight - $footerOffsetTop)});        
+            } else {
+                $sidebar.css({"width": $sidebarWidth , "top": $sidebarTop});  
+            }    
+            });   
+        });
+    }
+  }
 
   var retinaLogos = function() {
     var retina = window.devicePixelRatio > 1 ? true : false;
@@ -424,6 +449,7 @@
     buttonHeart();
     dropdown('#select-language');
     curvedtext();
+    sticky();
     retinaLogos();
     preloader();
   });
