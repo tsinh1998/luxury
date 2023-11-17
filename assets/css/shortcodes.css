@@ -1,9 +1,35 @@
 /**
 
     * themesflat-container
-    * blog-single
+    * wg-blog
+    * main-sidebar
+    * wg-action
     * page-title
-    *
+    * wg-about-us
+    * wg-box-icon
+    * wg-private-event
+    * testimonial-item
+    * wg-our-menu
+    * wg-reservations
+    * wg-location
+    * reservations-location
+    * gallery
+    * counter
+    * wg-philosophy
+    * portfolio
+    * portfolio-detail
+    * road-map
+    * wg-map
+    * wg-quetion
+    * faqs
+    * wg-chef
+    * page-menu-wrap
+    * wg-about-hour
+    * coming-soon-wrap
+    * wg-question
+    * wg-service-slider
+    * wg-shop
+    * wg-shop-detail
     * wg-404
     
 */
@@ -88,6 +114,10 @@
     border-radius: 50%;
     transform: translateY(-50%);
     background-color: #c6ac83;
+}
+
+.meta .meta-item.social::before {
+    top: 13px;
 }
 
 .meta .meta-item > a {
@@ -2221,8 +2251,6 @@ form.form-search button {
     background-color: #FFF;
 }
 
-
-
 /* counter */
 /* --------------------------------- */
 .wg-counter {
@@ -2699,6 +2727,7 @@ form.form-search button {
     right: 161px;
     bottom: 56px;
     top: 57px;
+    padding: 0;
     transform: scale(0.8);
     opacity: 0;
     visibility: hidden;
@@ -2720,6 +2749,11 @@ form.form-search button {
     bottom: 27px;
     right: -29px;
     z-index: -1;
+}
+
+.portfolio-item.style-carousel.type3 .wrap {
+    padding: 30px 30px 30px 28px;
+    background-color: #182125;
 }
 
 .portfolio-item.style-carousel.type3:hover .wrap {
@@ -2776,8 +2810,6 @@ form.form-search button {
 .portfolio-item.style-carousel.type4 .content p {
     margin-bottom: 18px;
 }
-
-
 
 /* portfolio-detail */
 /* -------------------------------- */
@@ -3034,6 +3066,10 @@ form.form-search button {
     left: 48px;
 }
 
+.wg-about-slider .swiper-container img {
+    object-fit: cover;
+    width: 100%;
+}
 
 /* road-map */
 /* ---------------------------------- */
@@ -3464,6 +3500,11 @@ a.mapboxgl-ctrl-logo {
     padding-bottom: 79px;
 }
 
+.chef-wrap .inner.snare-circle::before {
+    left: -149px;
+    top: 439px;
+}
+
 .chef-item .content {
     padding-top: 124px;
 }
@@ -3563,10 +3604,15 @@ a.mapboxgl-ctrl-logo {
 }
 
 .page-menu1-wrap > .left {
+    width: 26.1%;
+    z-index: 10;
+}
+
+.page-menu1-wrap > .left > div {
     text-align: center;
     background-color: #182125;
-    padding: 129px 16px 10px 10px;
-    width: 26.1%;
+    padding: 129px 16px 30px 10px;
+
 }
 
 #curved-text {
@@ -3692,6 +3738,11 @@ a.mapboxgl-ctrl-logo {
 .page-menu1-wrap .wg-menu-item .price {
     letter-spacing: 0;
     font-family: 'CormorantInfant';
+}
+
+.page-menu1-wrap .right .image img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* page-menu2-wrap */
@@ -4190,6 +4241,11 @@ a.mapboxgl-ctrl-logo {
     margin-bottom: 43px;
 }
 
+.wg-service-slider .swiper-container img {
+    object-fit: cover;
+    width: 100%;
+}
+
 /* services-detail-content */
 .services-detail-content {
     text-align: center;
@@ -4432,6 +4488,11 @@ a.mapboxgl-ctrl-logo {
     line-height: 39px;
     letter-spacing: 1.9px;
     text-align: center;
+}
+
+.shop-item .image img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .shop-item .image .box-icon {
@@ -4808,6 +4869,10 @@ a.mapboxgl-ctrl-logo {
     border: 1px solid #c6ac83;
     color: #FFF;
     letter-spacing: 2px;
+}
+
+.sidebar-item.filter .bottom > a:hover {
+    background-color: #c6ac83;
 }
 
 .sidebar-item.filter .total {

@@ -1,18 +1,23 @@
 /**
     * headerFixed
-    *  btnmenu
-    *  topSearch
-    *  video
-    *  counter
-    *  flatAccordion
-    *  tabs
-    *  rangeslider
-    *  styleshop
-    *  btnQuantity
-    *  gotop
-    *  cursor
-    *  retinaLogos
-    *  preloader
+    * btnmenu
+    * topSearch
+    * video
+    * counter
+    * flatAccordion
+    * tabs 
+    * rangeslider
+    * styleshop
+    * btnQuantity
+    * gotop
+    * cursor
+    * buttonHeart
+    * dropdown
+    * curvedtext
+    * sticky
+    * clock
+    * retinaLogos
+    * preloader
 */
 
 ; (function ($) {
@@ -384,29 +389,30 @@
   
   var sticky = function() {
     if ($('body').hasClass('sticky-scroll')) {
-        $(document).ready(function() {
-            var $window = $(window);  
-            var $sidebar = $(".po-sticky"); 
-            var $sidebarHeight = $sidebar.innerHeight();   
-            var $sidebarTop = $(".header-inner").innerHeight();   
-            var $sidebarWidth = $(".po-sticky-wrap").width();   
-            var $footerOffsetTop = $(".po-sticky-footer").offset().top +$(".po-sticky-footer .widget-content-inner.active").innerHeight() ; 
-            var $sidebarOffset = $sidebar.offset().top;
-            
-            $window.scroll(function() {
-            if($window.scrollTop() > $sidebarOffset - $sidebarTop) {
-                $sidebar.addClass("fixed");   
-            } else {
-                $sidebar.removeClass("fixed");   
-            }    
-            if($window.scrollTop() + $sidebarHeight > $footerOffsetTop - $sidebarTop ) {
-                $sidebar.css({"top" : 0 - $sidebarTop -($window.scrollTop() + $sidebarHeight - $footerOffsetTop)});        
-            } else {
-                $sidebar.css({"width": $sidebarWidth , "top": $sidebarTop});  
-            }    
-            });   
-        });
+      new StickySidebar('#sidebar-sticky', {
+        topSpacing: 0,
+        bottomSpacing: 0,
+        containerSelector: '.page-menu1-wrap',
+        innerWrapperSelector: '.po-sticky'
+      });
     }
+  }
+
+  var clock = function(){
+    $(document).ready(function() {
+      setInterval( function() {
+      var hours = new Date().getHours();
+      $(".hours").html(( hours < 10 ? "0" : "" ) + hours);
+      }, 1000);
+      setInterval( function() {
+      var minutes = new Date().getMinutes();
+      $(".min").html(( minutes < 10 ? "0" : "" ) + minutes);
+      },1000);
+      setInterval( function() {
+      var seconds = new Date().getSeconds();
+      $(".sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+      },1000);
+    });
   }
 
   var retinaLogos = function() {
@@ -450,6 +456,7 @@
     dropdown('#select-language');
     curvedtext();
     sticky();
+    clock();
     retinaLogos();
     preloader();
   });

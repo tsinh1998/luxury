@@ -95,27 +95,10 @@
                                     </a>
                                 </div>
                             </div><!-- /logo -->
-                            <div class="header-left">
-                                <div class="canvas">
-                                    <div class="canvas-button"><span></span></div>
-                                    <div class="wg-welcom">
-                                        <div class="inner">
-                                            <div class="button-close"><i class="icon-close"></i></div>
-                                            <img src="assets/images/logo/logo-ft.png" alt="">
-                                            <div class="text">Drawing on their respective experiences in the hospitality industry,  the duo imagined a place celebrating.</div>
-                                            <div class="number-phone">+39 399 461 1608</div>
-                                            <div class="text line-under">Andé Restaurant 767 5th Avenue, Paris 10021, France <br> Brochetterestaurant@gmail.com</div>
-                                            <div class="text line-under">Opening Hour: <br> Mon - Fri : 9.00am - 22.00pm, Holidays : Close</div>
-                                            <div class="widget-social justify-center">
-                                                <ul class="">
-                                                    <li><a href="#" class="icon-fb"></a></li>
-                                                    <li><a href="#" class="icon-trip"></a></li>
-                                                    <li><a href="#" class="icon-youtube-play"></a></li>
-                                                    <li><a href="#" class="icon-instagram2"></a></li>
-                                                </ul>
-                                            </div>                                        
-                                        </div>
-                                    </div>
+                            <div class="header-left type-1">
+                                <div class="header-clock ">
+                                    <a href="javascript:void(0);"><span class="badge hours"></span></a> <span>:</span>
+                                    <a href="javascript:void(0);"><span class="badge min"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -134,9 +117,9 @@
                                         <li class="menu-item"><a href="about.html">About</a></li>
                                         <li class="menu-item"><a href="book-a-table.html">Book A Table</a></li>
                                         <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                         <li class="menu-item"><a href="gallery.html">Gallery</a></li>
                                         <li class="menu-item"><a href="chef.html">Chef</a></li>
+                                        <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                         <li class="menu-item"><a href="services.html">Services</a></li>
                                         <li class="menu-item"><a href="services-detail.html">Services-detail</a></li>
                                         <li class="menu-item"><a href="shop.html">Shop</a></li>
@@ -175,20 +158,26 @@
                                 </li>
                             </ul>
                         </nav><!-- /main-nav -->
-                        <div class="header-right">
-                            <div class="header-search">
-                                <a href="#" class="show-search">
-                                    <i class="icon-search"></i>
-                                </a>
-                                <div class="top-search">
-                                    <form class="search-form relative">
-                                        <fieldset class="search">
-                                            <input type="search" placeholder="Search..." class="" name="search" tabindex="2" value="" aria-required="true" required="">
-                                        </fieldset>
-                                        <div class="">
-                                            <button class="" type="submit"><i class="icon-search"></i></button>
-                                        </div>
-                                    </form>
+                        <div class="header-right type-1">
+                            <div class="canvas">
+                                <div class="canvas-button"><span></span></div>
+                                <div class="wg-welcom">
+                                    <div class="inner">
+                                        <div class="button-close"><i class="icon-close"></i></div>
+                                        <img src="assets/images/logo/logo-ft.png" alt="">
+                                        <div class="text">Drawing on their respective experiences in the hospitality industry,  the duo imagined a place celebrating.</div>
+                                        <div class="number-phone">+39 399 461 1608</div>
+                                        <div class="text line-under">Andé Restaurant 767 5th Avenue, Paris 10021, France <br> Brochetterestaurant@gmail.com</div>
+                                        <div class="text line-under">Opening Hour: <br> Mon - Fri : 9.00am - 22.00pm, Holidays : Close</div>
+                                        <div class="widget-social justify-center">
+                                            <ul class="">
+                                                <li><a href="#" class="icon-fb"></a></li>
+                                                <li><a href="#" class="icon-trip"></a></li>
+                                                <li><a href="#" class="icon-youtube-play"></a></li>
+                                                <li><a href="#" class="icon-instagram2"></a></li>
+                                            </ul>
+                                        </div>                                        
+                                    </div>
                                 </div>
                             </div>
                             <div class="mobile-button ">
@@ -223,9 +212,9 @@
                                         <li class="menu-item"><a href="about.html">About</a></li>
                                         <li class="menu-item"><a href="book-a-table.html">Book A Table</a></li>
                                         <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                         <li class="menu-item"><a href="gallery.html">Gallery</a></li>
                                         <li class="menu-item"><a href="chef.html">Chef</a></li>
+                                        <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                         <li class="menu-item"><a href="services.html">Services</a></li>
                                         <li class="menu-item"><a href="services-detail.html">Services-detail</a></li>
                                         <li class="menu-item"><a href="shop.html">Shop</a></li>
@@ -280,7 +269,7 @@
 
             <!-- page-menu-wrap -->
             <div class="page-menu1-wrap widget-tabs">
-                <div class="left po-sticky-wrap relative">
+                <div id="sidebar-sticky" class="left po-sticky-wrap relative">
                     <div class="po-sticky">
                         <div class="curved-text" id="curved-text">brochette restaurant</div>
                         <img src="assets/images/item-background/menu-1.png" alt="">
@@ -1789,6 +1778,9 @@
     <script src="assets/js/map.js"></script>
     <script src="assets/js/circletype.min.js"></script>
     <script src="assets/js/countto.js"></script>
+    <script src="assets/js/rAF.js"></script>
+    <script src="assets/js/ResizeSensor.js"></script>
+    <script src="assets/js/sticky-sidebar.js"></script>
     <script src="assets/js/count-down.js"></script>
     <script src="assets/js/nouislider.min.js"></script>
     <script src="assets/js/magnific-popup.min.js"></script>
