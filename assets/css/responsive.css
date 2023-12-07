@@ -196,8 +196,7 @@
         margin-right: 0;
     }
     .widget-tabs.style-1 > .bottom .image {
-        order: 1;
-        width: 47%;
+        display: none;
     }
     .wg-location.style-1 .widget-tabs img {
         width: 100%;

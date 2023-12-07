@@ -1507,7 +1507,17 @@ form.form-search button {
 
 .testimonial-item .title a {
     color: #c6ac83;
-    text-decoration: underline;
+    position: relative;
+}
+
+.testimonial-item .title a::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #c6ac83;
+    bottom: 3px;
+    left: 0;
 }
 
 .testimonial-item .title a:hover {
@@ -2406,6 +2416,8 @@ form.form-search button {
     height: 100%;
     border: 1px solid #4e4a3d;
     text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -2771,8 +2783,17 @@ form.form-search button {
 }
 
 .portfolio-carousel-4 .slider-wrap {
-    max-width: 1636px;
+    max-width: 1620px;
     margin: auto;
+}
+
+.portfolio-carousel-4 .swiper-button-next {
+    top: 43%;
+    right: 43px;
+}
+.portfolio-carousel-4 .swiper-button-prev {
+    top: 43%;
+    left: 43px;
 }
 
 .portfolio-item.style-carousel.type4 {
@@ -2781,6 +2802,7 @@ form.form-search button {
 
 .portfolio-item.style-carousel.type4 img {
     height: unset;
+    width: unset;
 }
 
 .portfolio-item.style-carousel.type4 .content {
@@ -2820,6 +2842,23 @@ form.form-search button {
 
 .portfolio-detail .slider-wrap {
     margin-bottom: 71px;
+}
+
+.portfolio-detail .slider-wrap .swiper-button-next {
+    top: 48%;
+    right: -114px;
+    border: 1px solid #C3A27C;
+}
+
+.portfolio-detail .slider-wrap .swiper-button-prev {
+    top: 48%;
+    left: -114px;
+    border: 1px solid #C3A27C;
+}
+
+.portfolio-detail .slider-wrap .swiper-button-next ::after,
+.portfolio-detail .slider-wrap .swiper-button-prev ::after {
+    font-size: 23px !important;
 }
 
 .portfolio-detail .heading {
@@ -3569,6 +3608,18 @@ a.mapboxgl-ctrl-logo {
     animation: to-bottom 7s infinite linear;
 }
 
+.all-chefs::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0e1618;
+    opacity: 0.7;
+    z-index: 5;
+}
+
 .all-chefs img {
     width: 100%;
     opacity: 0.5;
@@ -3604,7 +3655,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .page-menu1-wrap > .left {
-    width: 26.1%;
+    width: 24%;
     z-index: 10;
 }
 
@@ -3688,7 +3739,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 .page-menu1-wrap .right {
-    width: 73.9%;
+    width: 76%;
 }
 
 .page-menu1-wrap .right .title {
@@ -4278,6 +4329,7 @@ a.mapboxgl-ctrl-logo {
 
 .services-detail-content p {
     margin-bottom: 25px;
+    letter-spacing: 0.1px;
 }
 
 .services-detail-content p.text {
@@ -4285,6 +4337,7 @@ a.mapboxgl-ctrl-logo {
     font-size: 17px;
     line-height: 28px;
     margin-bottom: 18px;
+    letter-spacing: 0.3px;
 }
 
 .services-detail-item {

@@ -1139,6 +1139,10 @@ a:focus {
     margin-left: -1px;
 }
 
+.header-top > .left.t1 {
+    gap: 84px;
+}
+
 .wg-information {
     display: flex;
     gap: 17px;
@@ -1148,7 +1152,7 @@ a:focus {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    border: 1px solid #c6ac83;
+    border: 1px solid #4e4a3d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1227,11 +1231,17 @@ a:focus {
 
 .site-logo-wrap {
     padding: 10px 46px 13px 46px;
-    border-left: 1px solid #4e4a3d;
-    border-right: 1px solid #4e4a3d;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-left: 1px solid rgb(198 172 131 / 80%);
+    border-right: 1px solid rgb(198 172 131 / 80%);
+    border-bottom: 1px solid rgb(198 172 131 / 80%);
+    border-bottom-left-radius: 72.5px;
+    border-bottom-right-radius: 72.5px;
     background-color: #0e1618;
+}
+
+.site-logo-wrap img {
+    width: 51px;
+    height: 92px;
 }
 
 .header-left {
@@ -1666,6 +1676,17 @@ a:focus {
     padding: 0;
 }
 
+.header-clock.style-1 {
+    margin-top: 4px;
+    margin-bottom: -4px;
+}
+
+.header-clock.style-1 span {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 25px;
+}
+
 /*Header fixed
 -------------------------------- */
 .header.is-fixed .header-inner {
@@ -1830,6 +1851,10 @@ a:focus {
 .inner-mobile-nav {
     padding: 15px;
     position: relative;
+}
+
+#mobile-logo_header {
+    width: 51px;
 }
 
 .inner-mobile-nav .mobile-nav-close {
@@ -2312,10 +2337,10 @@ a:focus {
 .heading-section .main {
     color: #fff;
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 55px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 2.3px;
     margin-top: 11px;
     margin-bottom: 25px;
 }

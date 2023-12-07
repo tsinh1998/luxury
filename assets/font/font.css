@@ -173,3 +173,10 @@
     font-display: swap;
     src: url('Cirka-Variable.ttf');
 }
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('Oswald-Regular.ttf');
+}
