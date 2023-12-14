@@ -3608,18 +3608,6 @@ a.mapboxgl-ctrl-logo {
     animation: to-bottom 7s infinite linear;
 }
 
-.all-chefs::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #0e1618;
-    opacity: 0.7;
-    z-index: 5;
-}
-
 .all-chefs img {
     width: 100%;
     opacity: 0.5;
